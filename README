@@ -1,1 +1,4 @@
 Tabs perl plugin for urxvt-unicode based on the original 'tabbed' plugin.
+
+Difference with original:
+ - Ability to switch tabs with Alt + F1-F12 keys.
