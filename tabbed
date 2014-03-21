@@ -1,4 +1,4 @@
-#! perl
+#!/usr/bin/env perl
 
 #:META:X_RESOURCE:tabbar-fg:colour:tab bar foreground colour
 #:META:X_RESOURCE:tabbar-bg:colour:tab bar background colour
@@ -415,7 +415,7 @@ package urxvt::ext::tabbed::tab;
 # simply proxies all interesting calls back to the tabbed class.
 
 {
-   for my $hook qw(start destroy key_press property_notify) {
+   for my $hook (qw(start destroy key_press property_notify)) {
       eval qq{
          sub on_$hook {
             my \$parent = \$_[0]{term}{parent}
